@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.diego.proyectofinal.MainActivity">
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/formulario"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:id="@+id/planeta"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/globe_50"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formulario"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/holamundo"
+                android:layout_gravity="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="19sp"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+                    android:layout_width="350dp"
+            android:id="@+id/formularionombre"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/formulario"
+
+
+
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    >
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+
+
+
+
+
+
+                        android:id="@+id/nombrec"
+                        android:hint="Nombre Competo"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulariofecha"
+            android:layout_below="@+id/formularionombre"
+            android:layout_centerHorizontal="true">
+
+
+            <Button
+                android:id="@+id/boton1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texto_titulo"
+                android:theme="@style/boton1"
+                android:text="@string/texto_boton"
+                android:onClick="mostrarcalendario"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+         <LinearLayout
+             android:id="@+id/formulariotelefono"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="0dp"
+             android:layout_below="@id/formulariofecha"
+             >
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="350dp"
+
+                 android:layout_centerVertical="true"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/formulariofecha"
+                 android:layout_margin="@dimen/activity_horizontal_margin">
+
+                 <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:id="@+id/telefono"
+                     android:inputType="number"
+                    android:hint="Telefono"/>
+             </android.support.design.widget.TextInputLayout>
+         </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/formularioemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/formulariotelefono"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formulariotelefono"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:hint="Email"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/formulardescp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/formularioemail"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="350dp"
+
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formularioemail"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descp"
+                    android:hint="Descripcion Personal"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:theme="@style/boton1"
+            android:text="@string/siguiente"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

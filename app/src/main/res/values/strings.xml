@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">      Formulario</string>
+    <string name="texto_boton">Fecha de Nacimiento</string>
+    <string name="siguiente">Siguiente</string>
+
+    <string name="confirmardatos">Confirmar Datos</string>
+    <string name="pnombre">Diego Cabrera</string>
+    <string name="fechanacimiento">03/02/1995</string>
+    <string name="ptelefono">3528762</string>
+    <string name="pemail">correo</string>
+    <string name="pfechanacimiento">Fecha Nacimiento</string>
+    <string name="descripcion">hola a todossss</string>
+
+    <string name="ppnombre">Nombre</string>
+    <string name="ppfechanacimiento">FechaNacimiento</string>
+    <string name="pptelefono">telefono</string>
+    <string name="ppemail">email</string>
+    <string name="ppdescripcion">descripcion</string>
+
+
+    <string name="pppnombre">nombre</string>
+
+</resources>
